@@ -1,6 +1,8 @@
 package org.example.oops;
 
-abstract class 
+abstract class Animal{
+    
+}
 
 
 public class AbstructClass {
