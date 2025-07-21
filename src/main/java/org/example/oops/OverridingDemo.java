@@ -9,6 +9,13 @@ class Shape{
     }
 }
 
+class Circle{
+    @Override
+    void draw(){
+        System.out.println("Drwaing Circle");
+    }
+}
+
 public class OverridingDemo {
     public static void main(String args[]){
 
