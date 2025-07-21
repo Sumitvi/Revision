@@ -1,7 +1,8 @@
 package org.example.oops;
 
 abstract class Animal{
-    abstract void sound()
+    abstract void sound();
+    
 }
 
 
