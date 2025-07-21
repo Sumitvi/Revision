@@ -1,6 +1,6 @@
 package org.example.oops;
 
-ab
+abstract class 
 
 
 public class AbstructClass {
