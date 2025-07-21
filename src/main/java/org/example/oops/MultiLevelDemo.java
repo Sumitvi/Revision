@@ -1,5 +1,7 @@
 package org.example.oops;
 
+// MultiLevel Inheritance
+
 class Animal{
     void eats(){
         System.out.println("Eating");
@@ -12,22 +14,20 @@ class Dog extends Animal{
     }
 }
 
-class Cat extends Animal{
+class Puppy extends Dog{
     void sound(){
-        System.out.println("Meaw");
+        System.out.println("Weep");
     }
 }
 
 
 public class MultiLevelDemo {
     public static void main(String args[]){
-        Cat c1 = new Cat();
+        Puppy c1 = new Puppy();
         c1.sound();
         c1.eats();
 
-        Dog d1 = new Dog();
-        d1.sound();
-        d1.eats();
+        c1.sound();
 
     }
 }
