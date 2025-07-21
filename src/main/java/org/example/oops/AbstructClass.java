@@ -1,7 +1,7 @@
 package org.example.oops;
 
 abstract class Animal{
-    
+    abst
 }
 
 
