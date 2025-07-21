@@ -35,7 +35,7 @@ public class AbstructClass {
 
         Cat c1 = new Cat();
         c1.sound();
-        c1.sleep();
+        c1.s
 
     }
 }
