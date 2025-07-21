@@ -4,12 +4,20 @@ class Fruits{
     private int weight;
     private String name;
 
-    public void FruitName(String name){
-        System.out.println(name);
+    public int getWeight() {
+        return weight;
     }
 
-    public int FruitWeight(int weight){
-        return weight;
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
 
@@ -31,13 +39,13 @@ public class EncapsulationDemo {
     public static void main(String args[]){
         Apple a1 = new Apple();
         a1.Name();
-        a1.FruitName("Mausami");
-        a1.Name();
+        a1.setName("Mausami");
+        System.out.println( a1.getName());
 
-        Banana b1 = new Banana();
-        b1.Name();
-        b1.FruitName("Orange");
-        b1.FruitWeight(3);
+//        Banana b1 = new Banana();
+//        b1.Name();
+//        b1.FruitName("Orange");
+//        b1.FruitWeight(3);
 
     }
 }
