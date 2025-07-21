@@ -42,6 +42,9 @@ public class EncapsulationDemo {
         a1.setName("Mausami");
         System.out.println( a1.getName());
 
+        a1.setWeight(2);
+        System.out.println(a1.getWeight());
+
 //        Banana b1 = new Banana();
 //        b1.Name();
 //        b1.FruitName("Orange");
