@@ -29,6 +29,13 @@ class Banana extends Fruits{
 public class EncapsulationDemo {
 
     public static void main(String args[]){
+        Apple a1 = new Apple();
+        a1.Name();
+        a1.FruitName("Mausami");
+        a1.Name();
+
+        Banana b1 = new Banana();
+        b1.
 
     }
 }
