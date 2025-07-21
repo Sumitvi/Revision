@@ -30,7 +30,12 @@ public class AbstructClass {
     public static void main(String args[]){
 
         Dog d1 = new Dog();
-        
+        d1.sound();
+        d1.sleep();
+
+        Cat c1 = new Cat();
+        c1.sound();
+        c1.sleep();
 
     }
 }
