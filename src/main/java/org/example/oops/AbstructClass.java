@@ -4,7 +4,7 @@ abstract class Animal{
     abstract void sound();
 
     void sleep(){
-        
+        System.out.pr
     }
 }
 
