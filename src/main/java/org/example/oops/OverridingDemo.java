@@ -32,7 +32,8 @@ public class OverridingDemo {
         Traingle t1 = new Traingle();
         t1.draw();
 
-        Circle c1 
+        Circle c1 = new Ci
+        
 
     }
 }
