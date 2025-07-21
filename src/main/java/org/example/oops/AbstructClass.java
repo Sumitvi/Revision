@@ -16,6 +16,8 @@ class Dog extends Animal{
     }
 }
 
+class Cat extends
+
 
 public class AbstructClass {
 
