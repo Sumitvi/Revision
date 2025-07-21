@@ -9,7 +9,7 @@ class Shape{
     }
 }
 
-class Circle{
+class Circle extends Shape{
     @Override
     void draw(){
         System.out.println("Drwaing Circle");
