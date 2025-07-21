@@ -35,7 +35,9 @@ public class EncapsulationDemo {
         a1.Name();
 
         Banana b1 = new Banana();
-        b1.
+        b1.Name();
+        b1.FruitName("Orange");
+        b1.FruitWeight(3);
 
     }
 }
