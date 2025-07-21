@@ -4,5 +4,5 @@ package org.example.oops;
 
 public class AbstructClass {
 
-    public sta
+    public static void main(String args[])
 }
