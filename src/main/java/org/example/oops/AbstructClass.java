@@ -11,7 +11,7 @@ abstract class Animal{
 class Dog extends Animal{
 
     @Override
-    
+    void sound()
 }
 
 
