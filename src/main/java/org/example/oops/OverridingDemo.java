@@ -16,9 +16,20 @@ class Circle extends Shape{
     }
 }
 
+class Traingle extends Shape{
+    @Override
+    void draw(){
+        System.out.println("Drawing Triangle");
+    }
+}
+
 public class OverridingDemo {
     public static void main(String args[]){
 
+        Shape s1 = new Shape();
+        s1.draw();
+
+        Traingle
 
     }
 }
