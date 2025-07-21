@@ -14,7 +14,15 @@ class Fruits{
 }
 
 class Apple extends Fruits{
-    public void 
+    public void Name(){
+        System.out.println("Apple");
+    }
+}
+
+class Banana extends Fruits{
+    public void Name(){
+        System.out.println("Banana");
+    }
 }
 
 
