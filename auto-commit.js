@@ -1,38 +1,20 @@
-// auto-commit.js
 const { exec } = require('child_process');
+const path = require('path');
 
 console.log("🔁 Auto commit started... (every 3 seconds)");
 
 setInterval(() => {
-  // Step 1: git add .
-  exec('git add .', (addErr, addOut, addErrMsg) => {
-    if (addErr) {
-      console.error('❌ Git Add Error:', addErrMsg);
-      return;
-    }
+  exec('git add .', (err) => {
+    if (err) return console.log('❌ Add Error:', err);
 
-    // Step 2: git commit -m "Auto commit at <time>"
-    const msg = `Auto commit at ${new Date().toLocaleTimeString()}`;
-    exec(`git commit -m "${msg}"`, (commitErr, commitOut, commitErrMsg) => {
-      if (commitErr) {
-        if (commitErrMsg.includes("nothing to commit")) {
-          console.log('📭 Nothing to commit...');
-        } else {
-          console.error('❌ Commit Error:', commitErrMsg);
-        }
-        return;
-      }
+    const commitMessage = `Auto commit: ${new Date().toLocaleString()}`;
+    exec(`git commit -m "${commitMessage}"`, (err) => {
+      if (err) return console.log('❌ Commit Error:', err.message.trim());
 
-      console.log(`✅ Committed: "${msg}"`);
-
-      // Step 3 (Optional): git push origin main
-      exec('git push origin main', (pushErr, pushOut, pushErrMsg) => {
-        if (pushErr) {
-          console.error('⚠️ Push failed:', pushErrMsg.trim());
-        } else {
-          console.log('🚀 Changes pushed to GitHub');
-        }
+      exec('git push origin main', (err) => {
+        if (err) return console.log('⚠️ Push Error:', err.message.trim());
+        console.log('✅ Pushed:', commitMessage);
       });
     });
   });
-}, 3000); // Every 3 seconds
+}, 3000);
