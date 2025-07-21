@@ -13,6 +13,10 @@ class Fruits{
     }
 }
 
+class Apple extends Fruits{
+    
+}
+
 
 public class EncapsulationDemo {
 
