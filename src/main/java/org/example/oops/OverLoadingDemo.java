@@ -24,9 +24,9 @@ public class OverLoadingDemo {
     public static void main(String args[]){
 
         Test t1 = new Test();
-        t1.add(10 , 20);
-        t1.add(20 , 30 , 40);
-        t1.add(10 , 20 , (int) 30., (int) 30.);
+        System.out.println(t1.add(10 , 20));
+        System.out.println( t1.add(20 , 30 , 40));
+        System.out.println(t1.add(10 , 20 , (int) 30., (int) 30.));
 
     }
 }
