@@ -29,7 +29,8 @@ public class OverridingDemo {
         Shape s1 = new Shape();
         s1.draw();
 
-        Traingle t1 = new Traingle()
+        Traingle t1 = new Traingle();
+        t1.draw();
 
     }
 }
