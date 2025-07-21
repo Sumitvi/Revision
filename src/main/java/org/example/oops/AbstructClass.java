@@ -29,7 +29,8 @@ public class AbstructClass {
 
     public static void main(String args[]){
 
-        Dog 
+        Dog d1 = new Dog();
+        
 
     }
 }
