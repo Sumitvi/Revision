@@ -8,7 +8,9 @@ abstract class Animal{
     }
 }
 
-class 
+class Dog extends Animal{
+    
+}
 
 
 public class AbstructClass {
