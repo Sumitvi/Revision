@@ -1,7 +1,7 @@
 package org.example.oops;
 
 class Person{
-    
+    String 
 }
 
 
