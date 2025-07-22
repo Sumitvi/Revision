@@ -4,7 +4,7 @@ class Person{
     String name;
     static int age;
 
-    void 
+    void display()
 }
 
 
