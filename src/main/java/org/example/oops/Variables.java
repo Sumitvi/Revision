@@ -2,7 +2,7 @@ package org.example.oops;
 
 class Person{
     String name;
-    
+    static int age
 }
 
 
