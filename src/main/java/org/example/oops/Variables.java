@@ -5,7 +5,7 @@ class Person{
     static int age;
 
     void display(){
-        System.out.pr
+        System.out.println(name);
     }
 }
 
