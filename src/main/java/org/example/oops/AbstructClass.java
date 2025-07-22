@@ -1,6 +1,6 @@
 package org.example.oops;
 
-abstract class Animal{
+abstract class Animal2{
     abstract void sound();
 
     void sleep(){
@@ -8,7 +8,7 @@ abstract class Animal{
     }
 }
 
-class Dog extends Animal{
+class Dog2 extends Animal{
 
     @Override
     void sound(){
@@ -16,7 +16,7 @@ class Dog extends Animal{
     }
 }
 
-class Cat extends Animal{
+class Cat2 extends Animal{
 
     @Override
     void sound(){
@@ -29,13 +29,13 @@ public class AbstructClass {
 
     public static void main(String args[]){
 
-        Dog d1 = new Dog();
+        Dog2 d1 = new Dog2();
         d1.sound();
-        d1.sleep();
 
-        Cat c1 = new Cat();
+
+
+        Cat2 c1 = new Cat2();
         c1.sound();
-        c1.sleep();
 
     }
 }

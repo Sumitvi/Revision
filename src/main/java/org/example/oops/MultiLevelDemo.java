@@ -2,10 +2,12 @@ package org.example.oops;
 
 // MultiLevel Inheritance
 
-class Animal{
+abstract class Animal{
     void eats(){
         System.out.println("Eating");
     }
+
+    abstract void sound();
 }
 
 class Dog extends Animal{
