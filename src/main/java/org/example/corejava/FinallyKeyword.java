@@ -9,6 +9,8 @@ public class FinallyKeyword {
             System.out.println(res);
         }catch(Exception e){
 
+             e.printStackTrace();
+
         }
         
         finally{
