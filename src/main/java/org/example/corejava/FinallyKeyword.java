@@ -11,5 +11,6 @@ public class FinallyKeyword {
             System.out.println("Exception caught: "+ e.getMessage());
         }
         
+        catch
     }
 }
