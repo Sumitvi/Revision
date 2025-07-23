@@ -7,7 +7,9 @@ public class FinallyKeyword {
             System.out.println("Inside try Block");
             int res = 10/0;
             System.out.println(res);
-        }catch(Exception e)
+        }catch(Exception e){
+            e
+        }
         
     }
 }
