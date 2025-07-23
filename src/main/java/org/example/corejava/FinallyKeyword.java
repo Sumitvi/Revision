@@ -12,7 +12,7 @@ public class FinallyKeyword {
         }
         
         finally{
-            System.out.println("Finally Block Excuted Weather the ")
+            System.out.println("Finally Block Excuted Weather the Exception Occurs or Not");
         }
     }
 }
