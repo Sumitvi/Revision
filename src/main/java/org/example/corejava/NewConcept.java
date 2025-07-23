@@ -4,7 +4,9 @@ public class NewConcept {
 
     public static void main(String args[]){
         
-        void 
+        void m1(){
+            
+        }
     }
     
 }
