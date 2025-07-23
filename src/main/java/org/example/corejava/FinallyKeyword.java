@@ -6,7 +6,7 @@ public class FinallyKeyword {
         try{
             System.out.println("Inside try Block");
             int res = 10/0;
-            System.out.println()
+            System.out.println(res);
         }
         
     }
