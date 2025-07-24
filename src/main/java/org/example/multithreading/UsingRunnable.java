@@ -23,7 +23,9 @@ public class UsingRunnable {
         Thread thread1 = new Thread(t1);
         thread1.start();
 
-        for(int )
+        for(int i=0;i<5;i++){
+            
+        }
 
     }
 }
