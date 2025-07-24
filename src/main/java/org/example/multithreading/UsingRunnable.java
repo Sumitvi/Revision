@@ -20,7 +20,8 @@ public class UsingRunnable {
     public static void main(String args[]){
 
         Test t1 = new Test();
-        `
+        Thread thread1 = new Thread(t1);
+        thread1.start();
 
     }
 }
