@@ -1,6 +1,6 @@
 package org.example.multithreading;
 
-class Demo implements Runnable{
+class Test implements Runnable{
 
     @
 }
