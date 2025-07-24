@@ -3,7 +3,9 @@ package org.example.multithreading;
 class Test implements Runnable{
 
     @Override
-    public void run()
+    public void run(){
+        
+    }
 }
 
 public class UsingRunnable {
