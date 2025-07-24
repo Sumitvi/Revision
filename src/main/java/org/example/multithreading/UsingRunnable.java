@@ -23,7 +23,7 @@ public class UsingRunnable {
         Thread thread1 = new Thread(t1);
         thread1.start();
 
-        
+        for(int )
 
     }
 }
