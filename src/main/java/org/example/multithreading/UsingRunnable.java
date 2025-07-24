@@ -24,7 +24,7 @@ public class UsingRunnable {
         thread1.start();
 
         for(int i=0;i<5;i++){
-            System
+            System.out.println("")
         }
 
     }
