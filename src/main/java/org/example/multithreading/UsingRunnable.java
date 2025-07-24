@@ -1,6 +1,6 @@
 package org.example.multithreading;
 
-class 
+class Demo 
 
 public class UsingRunnable {
 
