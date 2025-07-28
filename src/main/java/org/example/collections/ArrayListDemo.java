@@ -28,6 +28,7 @@ public class ArrayListDemo {
 
                if (list.contains(index)) {
 
+                   System.out.println("Do you Want to Delete the index " + index);
 
                }
                System.out.println("List is " + list);
