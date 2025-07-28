@@ -11,6 +11,10 @@ public class ArrayListDemo {
             list.add(i);
         }
 
+
+//        The Other Part
+
+
         System.out.println("List is " + list);
 
        while(true){
@@ -21,6 +25,11 @@ public class ArrayListDemo {
 
            if(index<list.size()){
                list.remove(index);
+
+               if (list.contains(index)) {
+
+
+               }
                System.out.println("List is " + list);
            }else{
                System.out.println("No List Found");
@@ -39,6 +48,8 @@ public class ArrayListDemo {
                System.exit(0);
            }
        }
+
+
 
        }
 }
