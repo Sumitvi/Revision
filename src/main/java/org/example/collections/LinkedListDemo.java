@@ -30,16 +30,24 @@ public class LinkedListDemo {
             }
         }
 
-        while(true){
+
             System.out.println("Remove Element");
             int removeele = sc.nextInt();
-            list.remove(removeele);
+            list.remove(Integer.valueOf(removeele));
             System.out.println("List is " + list);
 
-            if(list.size()>=4){
-                System.out.println("No Such List Exist");
-                break;
-            }
+
+
+
+
+
+        System.out.println("Enter Element to Check if Exists");
+        int ele = sc.nextInt();
+
+        if(list.contains(ele)){
+            System.out.println("Yes We Have");
+        }else{
+            System.out.println("Element not Exists");
         }
 
 
