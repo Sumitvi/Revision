@@ -10,7 +10,7 @@ public class PriorityQueueDemo {
 //        no thread safe
 //        duplicate allow
 
-        PriorityQueue<Integer> pq = new PriorityQueue<>();  // this is min heap
+        PriorityQueue<Integer> pq = new PriorityQueue<>();  // this is min heap by default
         pq.add(1);
         pq.add(30);
         pq.offer(20);
