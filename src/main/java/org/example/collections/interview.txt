@@ -1,0 +1,28 @@
+1. What is static block and static initialization?
+
+
+2. If I want to call the superclass constructor in subclass, what should I do?
+Ans: Use super().
+
+
+3. Difference between interface and abstract class.
+
+
+4. Why Java doesn’t support multiple inheritance?
+It can lead to ambiguity and complexity, and causes diamond problem.
+
+
+5. Why Java is platform independent?
+
+
+6. Difference between class file and byte code.
+
+
+7. Difference between is-a relationship and has-a relationship.
+
+is-a denotes → inheritance
+
+has-a denotes → composition
+
+
+8. Types of access modifiers.
