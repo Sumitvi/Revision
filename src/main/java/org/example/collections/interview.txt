@@ -1,28 +1,37 @@
-1. What is static block and static initialization?
+1. Static block & static initialization
+Runs once when class loads.
 
+Used to initialize static variables.
 
-2. If I want to call the superclass constructor in subclass, what should I do?
-Ans: Use super().
+2. Call superclass constructor
+Use super() in subclass constructor (must be first statement).
 
+3. Interface vs Abstract class
+Interface: Only abstract methods (default & static from Java 8). No constructors. Multiple implementation allowed.
 
-3. Difference between interface and abstract class.
+Abstract Class: Can have abstract + normal methods. Has constructors. Single inheritance only.
 
+4. Why no multiple inheritance in Java
+Avoids ambiguity (diamond problem) → Java uses interfaces instead.
 
-4. Why Java doesn’t support multiple inheritance?
-It can lead to ambiguity and complexity, and causes diamond problem.
+5. Why Java is platform independent
+Java code → Bytecode → JVM → Runs on any OS.
 
+6. Class file vs Bytecode
+Class file: File created after compilation (.class).
 
-5. Why Java is platform independent?
+Bytecode: Instructions inside class file executed by JVM.
 
+7. is-a vs has-a
+is-a: Inheritance (Dog is an Animal).
 
-6. Difference between class file and byte code.
+has-a: Composition (Car has Engine).
 
+8. Access modifiers
+public: Everywhere
 
-7. Difference between is-a relationship and has-a relationship.
+protected: Same package + subclasses
 
-is-a denotes → inheritance
+default: Same package
 
-has-a denotes → composition
-
-
-8. Types of access modifiers.
+private: Same class
