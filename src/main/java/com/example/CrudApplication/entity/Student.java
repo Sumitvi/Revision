@@ -83,4 +83,8 @@ public class Student {
         this.motherName = motherName;
     }
 
+    public Student(){
+
+    }
+
 }

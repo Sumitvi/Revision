@@ -15,8 +15,7 @@ public class StudentService {
     @Autowired
     UserRepo userRepo;
 
-    @Autowired
-    Student student;
+
 
 
 //    create
@@ -35,8 +34,8 @@ public class StudentService {
 //    Find by Id
 
     public Optional<Student> findById(int id){
-         userRepo.findById(id);
-         return null;
+         return userRepo.findById(id);
+
     }
 
 //    update
@@ -60,7 +59,6 @@ public class StudentService {
     public void deleteStudent(int id){
         userRepo.deleteById(id);
     }
-
 
 
 
