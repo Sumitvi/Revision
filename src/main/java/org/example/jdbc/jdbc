@@ -1,0 +1,103 @@
+JDBC API Components
+
+1 . Interfaces
+
+Driver
+Connection
+Statement
+preparedStatement
+ResultSet
+
+
+2. Classes
+DriverManager
+
+
+3. Exception
+SQLException
+
+
+Steps to prepare JDBC Program
+
+1. Load Driver
+2. Get Connection
+3. Create Statement
+4. Excute Query
+5. Process the Result
+6. Close the Connection
+
+
+
+
+Interview Questions on JDBC
+
+1. What is JDBC?
+JDBC (Java Database Connectivity) is an API that allows Java programs to connect and interact with relational databases.
+
+2. What are the types of JDBC drivers?
+Type 1: JDBC-ODBC Bridge (obsolete)
+
+Type 2: Native-API Driver (uses native DB libraries)
+
+Type 3: Network Protocol Driver (middleware)
+
+Type 4: Thin Driver (pure Java, most used in real projects)
+
+3. Steps to connect to a database using JDBC
+Load Driver → Class.forName("com.mysql.cj.jdbc.Driver")
+
+Establish connection → DriverManager.getConnection(...)
+
+Create Statement or PreparedStatement
+
+Execute query
+
+Process ResultSet
+
+Close connection
+
+4. Statement vs PreparedStatement
+Feature	Statement	PreparedStatement
+Query compilation	Every execution	Precompiled (faster)
+Parameters	Not supported	Supports ? placeholders
+SQL Injection	Vulnerable	Prevents SQL injection
+
+5. What is CallableStatement?
+Used to call stored procedures in the database.
+
+Example: CallableStatement cs = con.prepareCall("{call getUser(?)}");
+
+6. What is ResultSet?
+An object that represents the result of an SQL query.
+
+Methods: next(), getString(), getInt(), etc.
+
+7. What is transaction management in JDBC?
+By default, JDBC has auto-commit ON.
+
+You can turn it off:
+
+java
+Copy
+Edit
+con.setAutoCommit(false);
+// execute queries
+con.commit(); // or con.rollback();
+8. What is batch processing in JDBC?
+Used to execute multiple queries at once:
+
+java
+Copy
+Edit
+stmt.addBatch("INSERT INTO ...");
+stmt.addBatch("UPDATE ...");
+stmt.executeBatch();
+9. What is connection pooling?
+A mechanism to reuse database connections for better performance.
+
+Handled by libraries like HikariCP or application servers.
+
+10. Why is PreparedStatement better than Statement?
+Prevents SQL Injection
+
+Faster because query is compiled once
