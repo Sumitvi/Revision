@@ -1,6 +1,7 @@
 package org.example.collections;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class HashMapDemo {
 
@@ -27,9 +28,9 @@ public class HashMapDemo {
 
 //        need to return the element whose frequency is 1
 
-        for(int i=0;i<map.size();i++){
-            if(map.containsKey()>1){
-                
+        for(Map.Entry<Integer , Integer> entry : map.entrySet()){
+            if(entry.getValue()==1){
+                System.out.println(entry.getKey());
             }
         }
 
