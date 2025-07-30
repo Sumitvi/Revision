@@ -28,13 +28,16 @@ public class JdbcDemo {
 
             ResultSet resultSet = statement.executeQuery(query);
 
-            int id = resultSet.getInt("id");
-            String firstName = resultSet.getString("firstname");
-            String lastName = resultSet.getString("lastname");
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String firstName = resultSet.getString("firstname");
+                String lastName = resultSet.getString("lastname");
 
-            System.out.println("Id " + id);
-            System.out.println("FirstName " + firstName);
-            System.out.println("LastName " + lastName);
+                System.out.println("Id: " + id);
+                System.out.println("FirstName: " + firstName);
+                System.out.println("LastName: " + lastName);
+                System.out.println("---------------");
+            }
 
 //            Close the Connection
             connection.close();
