@@ -1,0 +1,78 @@
+Collection - Collection is a framwork that provides
+
+1. List
+
+2. Set
+
+3. Queue
+
+4. Map
+
+And supports:
+
+1. Searching
+
+2. Sorting
+
+3. Insertion
+
+4. Deletion
+
+5. Iteration
+
+Collection is an Interface
+Parent Class of Collection - Iterable
+
+
+        Collection (Interface)
+        /        |        \
+     List      Set      Queue
+      |         |          |
+ArrayList   HashSet    PriorityQueue
+LinkedList  TreeSet    ArrayDeque
+
+             Map (Separate interface)
+              |
+          HashMap, TreeMap, etc.
+
+
+
+🔹 1. List
+Maintains insertion order
+
+Allows duplicates
+
+Can access elements by index
+
+
+🔹 2. Set
+No duplicates allowed
+
+Doesn’t guarantee order (unless you use LinkedHashSet or TreeSet)
+
+
+🔹 3. Queue
+Follows FIFO
+
+Useful in scheduling, messaging, etc.
+
+
+🔹 4. Map
+Stores key-value pairs
+
+Keys are unique
+
+
+
+
+
+⚙️ Utility Class: Collections
+Java also gives you the Collections utility class with helper methods:
+
+
+Collections.sort(list);
+Collections.reverse(list);
+Collections.max(list);
+Collections.shuffle(list);
+
+where Collections is a Class
